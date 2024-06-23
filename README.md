@@ -1,4 +1,4 @@
-INTRODUCTION: 
+**INTRODUCTION: **
 "WoodenDelights" is a revolutionary web-based application that transforms the shopping
 experience for buyers of wooden furniture and decor. Our website is meticulously designed to
 be user-friendly, allowing users to effortlessly browse various decor item categories, select
