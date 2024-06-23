@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Information - Wooden Delights</title>
+    <link rel="stylesheet" href="../Css/shipping.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header-nav">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="living.html">Living</a></li>
+                <li><a href="study.html">Study</a></li>
+            </ul>
+            <div class="header-right">
+                <a href="cart.html"><img src="./Images/add-to-cart.png" alt="Cart"></a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+
+        <a href="cart.html" class="back-arrow"><i class="fas fa-arrow-left"></i> Back to Cart</a>
+        <section class="shipping-form">
+            <h2>1. Contact Information</h2>
+            <p>We will use this email to send you updates about your order</p> <br>
+            <input type="email" id="email" placeholder="Email address" required>
+            <input type="phone" id="phone" placeholder="phone no" required>
+            <br> <br>
+
+            <h2>2. Billing Address</h2>
+            <p>Enter billing address that matches your payment method</p><br>
+            <form id="billing-form">
+                <div class="form-row">
+                    <input type="text" id="first-name" placeholder="First name" required>
+                    <input type="text" id="last-name" placeholder="Last name" required>
+                </div>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="text" id="apartment" placeholder="Apartment, suite, etc. (optional)">
+                <div class="form-row">
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="state" placeholder="State" required>
+                </div>
+                <label for="cash">Cash On Delivery</label><input type="radio" id="cash" required>
+
+                <br><button type="submit" id="order">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/shipping.js"></script>
+</body>
+</html>

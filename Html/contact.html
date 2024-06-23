@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wooden Delights</title>
+    <link rel="stylesheet" href="../Css/contact.css">
+</head>
+<body>
+    <header class="header-nav">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="living.html">Living</a></li>
+                <li><a href="study.html">Study</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="header-right">
+                <a href="cart.html"><img src="./Images/add-to-cart.png" alt="Cart"></a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="contact">
+        <h1>Send Us A Message</h1>
+        <div class="contact-container">
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="first-name">First name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Phone number:</label>
+                    <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">How can we help:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <div class="contact-info">
+                <h2>Wooden Delights is always at your door</h2>
+                <p>Get in touch with us, we are always ready to solve your problems. Customer Service is always at your door.</p>
+                <div class="social-icons">
+                    <div class="social-icon">
+                        <img src="./Images/instagram.png" alt="Instagram">
+                        <span>woodendelights.official</span>
+                    </div>
+                    <div class="social-icon">
+                        <img src="./Images/gmail.png" alt="Email">
+                        <span>woodendelights@gmail.com</span>
+                    </div>
+                    <div class="social-icon">
+                        <img src="./Images/facebook.png" alt="Facebook">
+                        <span>@woodendelights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            const form = event.target;
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                form.reportValidity();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Wooden Delights</title>
+    <link rel="stylesheet" href="../Css/faq.css">
+</head>
+<body>
+    <header class="header-nav">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="living.html">Living</a></li>
+                <li><a href="study.html">Study</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="header-right">
+                <a href="cart.html"><img src="./Images/add-to-cart.png" alt="Cart"></a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="faq-section">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-item">
+                <button class="faq-question">What payment methods do you accept?<span class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>We accept various payment methods including credit cards, debit cards, and PayPal.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is your return policy?<span class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Our return policy allows you to return products within 30 days of purchase.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer warranty on your products?<span class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Yes, we offer a one-year warranty on all our products.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer customization options?<span class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>We offer customization options on selected products. Please contact us for more details.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const faqAnswer = faqItem.querySelector('.faq-answer');
+                
+                faqAnswer.style.display = faqAnswer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
